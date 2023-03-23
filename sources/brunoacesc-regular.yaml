@@ -1,0 +1,6 @@
+sources:
+  - BrunoAceSC-Regular.glyphs
+buildTTF: true
+buildOTF: false
+buildStatic: true
+buildWebfont: false
