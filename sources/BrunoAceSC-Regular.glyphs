@@ -1,24 +1,6 @@
 {
 .appVersion = "3151";
 .formatVersion = 3;
-classes = (
-{
-code = "quoteleft quotedblleft";
-name = _kernquoteleft;
-},
-{
-code = "quoteright quotedblright";
-name = _kernquoteright;
-},
-{
-code = "fraction slash";
-name = slash;
-},
-{
-code = "zero one two three four five six seven eight nine";
-name = all_figures;
-}
-);
 customParameters = (
 {
 name = trademark;
@@ -38,1454 +20,97 @@ date = "2023-03-23 13:39:58 +0000";
 familyName = "Bruno Ace SC";
 featurePrefixes = (
 {
-code = "#> languagesystem
-languagesystem DFLT dflt;
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
 languagesystem latn dflt;
-#< languagesystem
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn CAT;
 ";
-name = xxxx;
+name = Languagesystems;
 }
 );
 features = (
 {
-code = "feature sups;
-feature liga;
+automatic = 1;
+code = "feature locl;
+feature sups;
+feature frac;
 feature ordn;
-feature frac;";
+";
 tag = aalt;
 },
 {
-code = "@_kernA_leftpair = [A Agrave Aacute Acircumflex Atilde Adieresis Aring Abreve Aogonek Amacron];
-@_kernA_rightpair = [A AE Agrave Aacute Acircumflex Atilde Adieresis Aring Abreve Aogonek Amacron AEacute];
-@_kernC = [C Ccedilla Cacute Ccircumflex Cdotaccent Ccaron];
-@_kernD = [D Eth Dcaron Dcroat];
-@_kernE = [E Egrave Eacute Ecircumflex Edieresis Ebreve Edotaccent Eogonek Ecaron Emacron];
-@_kernF = [F];
-@_kernG = [G Gcircumflex Gbreve Gdotaccent Gcommaaccent];
-@_kernH = [H Hcircumflex Hbar];
-@_kernI = [I Igrave Iacute Icircumflex Idieresis Itilde Ibreve Iogonek Idotaccent Imacron];
-@_kernJ = [J Jcircumflex];
-@_kernK = [K Kcommaaccent];
-@_kernL = [L Lslash Lacute Lcommaaccent];
-@_kernM = [M];
-@_kernN = [N Ntilde Nacute Ncaron Ncommaaccent Eng];
-@_kernO_leftpair = [O Ograve Oacute Ocircumflex Otilde Odieresis Oslash Obreve Ohungarumlaut Oslashacute Omacron];
-@_kernO_rightpair = [O Ograve Oacute Ocircumflex Otilde Odieresis Oslash Obreve Ohungarumlaut Oslashacute Omacron OE];
-@_kernP = [P];
-@_kernR = [R Racute Rcaron Rcommaaccent];
-@_kernS = [S Scaron Sacute Scircumflex Scedilla];
-@_kernT = [T Tcaron Tcommaaccent Tbar];
-@_kernU = [U Ugrave Uacute Ucircumflex Udieresis Utilde Ubreve Uring Uhungarumlaut Uogonek Umacron];
-@_kernV = [V];
-@_kernW = [W Wcircumflex Wgrave Wacute Wdieresis];
-@_kernX = [X];
-@_kernY = [Y Ydieresis Yacute Ycircumflex Ygrave];
-@_kernZ = [Z Zcaron Zacute Zdotaccent];
-@_kerna_leftpair = [a agrave aacute acircumflex atilde adieresis aring amacron abreve aogonek];
-@_kerna_rightpair = [a agrave aacute acircumflex atilde adieresis aring amacron abreve aogonek ae aeacute];
-@_kernc = [c ccedilla cacute ccircumflex cdotaccent ccaron];
-@_kernd = [d dcaron];
-@_kerne = [e egrave eacute ecircumflex edieresis ebreve edotaccent eogonek ecaron emacron];
-@_kernf = [f];
-@_kernf_rightpair = [fi fl];
-@_kerng = [g gcircumflex gbreve gdotaccent gcommaaccent];
-@_kernh = [h hcircumflex hbar];
-@_kerni = [i igrave iacute icircumflex idieresis itilde ibreve iogonek imacron dotlessi];
-@_kernj = [j jcircumflex dotlessj];
-@_kernk = [k kcommaaccent kgreenlandic];
-@_kernl = [l lslash lacute lcommaaccent];
-@_kernn = [n ntilde nacute ncaron ncommaaccent eng];
-@_kerno_leftpair = [o eth ograve oacute ocircumflex otilde odieresis oslash obreve ohungarumlaut oslashacute omacron];
-@_kerno_rightpair = [o eth ograve oacute ocircumflex otilde odieresis oslash obreve ohungarumlaut oslashacute omacron oe];
-@_kernq = [q];
-@_kernr = [r racute rcaron rcommaaccent];
-@_kerns = [s scaron sacute scircumflex scedilla germandbls];
-@_kernt = [t tcommaaccent tbar];
-@_kernu = [u ugrave uacute ucircumflex udieresis utilde ubreve uring uhungarumlaut uogonek umacron];
-@_kernv = [v];
-@_kernw = [w wcircumflex wgrave wacute wdieresis];
-@_kernx = [x];
-@_kerny = [y ydieresis yacute ycircumflex ygrave];
-@_kernz = [z zcaron zacute zdotaccent];
-@_kernhyphen = [hyphen];
-@_kernperiod = [period ellipsis];
-@_kerncolon = [colon];
-@_kernsemicolon = [semicolon];
-@_kerncomma = [comma];
-   pos space quotedblright -25;
-   pos space quotedbl -15;
-   pos space quoteright -25;
-   pos space quotesingle -15;
-   pos parenleft four -14;
-   pos parenleft zero -46;
-   pos parenleft parenleft -18;
-   pos parenleft braceleft -27;
-   pos parenleft six -37;
-   pos parenleft nine -21;
-   pos parenleft B -17;
-   pos parenleft Q -45;
-   pos parenleft b -25;
-   pos parenleft m -25;
-   pos parenleft p -25;
-   pos parenleft eight -36;
-   pos plus seven -16;
-   pos plus three -49;
-   pos slash zero -13;
-   pos slash slash -80;
-   pos slash Q -12;
-   pos slash eight -15;
-   pos slash b -12;
-   pos slash m -12;
-   pos slash p -12;
-   pos zero parenright -46;
-   pos zero seven -15;
-   pos zero quotesinglbase -10;
-   pos zero quotedblbase -10;
-   pos zero backslash -13;
-   pos zero fraction -17;
-   pos zero slash -15;
-   pos zero three -10;
-   pos zero bracketright -46;
-   pos zero braceright -47;
-   pos one parenright -14;
-   pos three parenright -34;
-   pos three bracketright -33;
-   pos three braceright -33;
-   pos four parenright -14;
-   pos five parenright -24;
-   pos five bracketright -15;
-   pos five braceright -15;
-   pos six parenright -24;
-   pos six bracketright -15;
-   pos six braceright -15;
-   pos seven endash -17;
-   pos seven divide -23;
-   pos seven slash -88;
-   pos seven numbersign -35;
-   pos seven cent -17;
-   pos seven quotedblbase -101;
-   pos seven plus -12;
-   pos seven fraction -100;
-   pos seven quotesinglbase -101;
-   pos seven emdash -17;
-   pos seven periodcentered -20;
-   pos eight parenright -37;
-   pos eight braceright -36;
-   pos eight backslash -15;
-   pos eight bracketright -36;
-   pos nine parenright -37;
-   pos nine bracketright -37;
-   pos nine braceright -38;
-   pos B parenright -38;
-   pos B quotedblright -8;
-   pos B seven -29;
-   pos B asterisk -13;
-   pos B question -40;
-   pos B backslash -33;
-   pos B quoteright -8;
-   pos B trademark -22;
-   pos B bracketright -43;
-   pos B braceright -44;
-   pos Q parenright -45;
-   pos Q quotesinglbase -11;
-   pos Q question -14;
-   pos Q trademark -11;
-   pos Q quotedblbase -11;
-   pos Q seven -14;
-   pos Q backslash -12;
-   pos Q slash -13;
-   pos Q bracketright -44;
-   pos Q braceright -45;
-   pos bracketleft zero -45;
-   pos bracketleft parenleft -14;
-   pos bracketleft braceleft -19;
-   pos bracketleft six -37;
-   pos bracketleft nine -11;
-   pos bracketleft Q -44;
-   pos bracketleft eight -36;
-   pos bracketleft b -16;
-   pos bracketleft m -16;
-   pos bracketleft p -16;
-   pos backslash quoteright -47;
-   pos backslash quotedblright -47;
-   pos backslash Q -14;
-   pos backslash quotedbl -41;
-   pos backslash one -12;
-   pos backslash four -54;
-   pos backslash zero -15;
-   pos backslash quotesingle -41;
-   pos b parenright -42;
-   pos b ordfeminine -6;
-   pos b trademark -42;
-   pos b backslash -53;
-   pos b quoteleft -19;
-   pos b quotesingle -16;
-   pos b quotedblright -23;
-   pos b question -45;
-   pos b quoteright -23;
-   pos b bracketright -45;
-   pos b quotedbl -16;
-   pos b quotedblleft -19;
-   pos b registered -10;
-   pos b asterisk -18;
-   pos b ordmasculine -4;
-   pos b braceright -45;
-   pos m parenright -25;
-   pos m question -10;
-   pos m trademark -18;
-   pos m backslash -12;
-   pos m bracketright -16;
-   pos m braceright -17;
-   pos p parenright -54;
-   pos p trademark -24;
-   pos p quotedblbase -24;
-   pos p quotedblright -8;
-   pos p space -22;
-   pos p question -13;
-   pos p quoteright -8;
-   pos p slash -26;
-   pos p bracketright -54;
-   pos p quotesinglbase -24;
-   pos p backslash -24;
-   pos p braceright -58;
-   pos braceleft zero -47;
-   pos braceleft parenleft -14;
-   pos braceleft braceleft -21;
-   pos braceleft six -38;
-   pos braceleft Q -46;
-   pos braceleft b -17;
-   pos braceleft m -17;
-   pos braceleft p -17;
-   pos braceleft nine -11;
-   pos braceleft eight -36;
-   pos sterling four -53;
-   pos sterling zero -16;
-   pos sterling one -10;
-   pos divide seven -26;
-   pos divide three -37;
-   pos divide one -14;
-   pos braceright parenright -27;
-   pos braceright bracketright -19;
-   pos braceright braceright -21;
-   pos parenright parenright -18;
-   pos parenright bracketright -14;
-   pos parenright braceright -14;
-   pos guilsinglright quotedblright -23;
-   pos guilsinglright quotedbl -14;
-   pos guilsinglright quotesingle -14;
-   pos guilsinglright quoteright -23;
-   pos period quoteleft -110;
-   pos period quotedblright -109;
-   pos period quotedbl -99;
-   pos period quotesingle -99;
-   pos period quotedblleft -110;
-   pos period one -15;
-   pos period Q -11;
-   pos period zero -10;
-   pos period quoteright -109;
-   pos period four -89;
-   pos comma quoteleft -110;
-   pos comma quotedblright -109;
-   pos comma quotedbl -99;
-   pos comma quotesingle -99;
-   pos comma quotedblleft -110;
-   pos comma one -15;
-   pos comma Q -11;
-   pos comma zero -10;
-   pos comma quoteright -109;
-   pos comma four -89;
-   pos quotesinglbase four -89;
-   pos quotesinglbase quotedblleft -110;
-   pos quotesinglbase quotedblright -109;
-   pos quotesinglbase Q -11;
-   pos quotesinglbase quotedbl -99;
-   pos quotesinglbase quoteleft -110;
-   pos quotesinglbase one -15;
-   pos quotesinglbase quoteright -109;
-   pos quotesinglbase zero -10;
-   pos quotesinglbase quotesingle -99;
-   pos quotedblbase quoteleft -110;
-   pos quotedblbase quotedblright -109;
-   pos quotedblbase quotedbl -99;
-   pos quotedblbase quotedblleft -110;
-   pos quotedblbase four -89;
-   pos quotedblbase one -15;
-   pos quotedblbase Q -11;
-   pos quotedblbase zero -10;
-   pos quotedblbase quoteright -109;
-   pos quotedblbase quotesingle -99;
-   pos quoteright guillemotleft -20;
-   pos quoteright slash -46;
-   pos quoteright space -25;
-   pos quoteright guilsinglleft -20;
-   pos quoteright quotedblbase -109;
-   pos quoteright quotesinglbase -109;
-   pos quotedblright guillemotleft -20;
-   pos quotedblright slash -46;
-   pos quotedblright space -25;
-   pos quotedblright guilsinglleft -20;
-   pos quotedblright quotedblbase -109;
-   pos quotedblright quotesinglbase -109;
-   pos quotedblleft quotedblbase -109;
-   pos quotedblleft quotesinglbase -109;
-   pos quoteleft quotedblbase -109;
-   pos quoteleft quotesinglbase -109;
-   pos endash seven -19;
-   pos endash three -16;
-   pos emdash seven -19;
-   pos emdash three -16;
-   pos quotedbl guillemotleft -14;
-   pos quotedbl slash -41;
-   pos quotedbl space -16;
-   pos quotedbl guilsinglleft -14;
-   pos quotedbl quotedblbase -99;
-   pos quotedbl quotesinglbase -99;
-   pos quotesingle guillemotleft -14;
-   pos quotesingle slash -41;
-   pos quotesingle space -16;
-   pos quotesingle guilsinglleft -14;
-   pos quotesingle quotedblbase -99;
-   pos quotesingle quotesinglbase -99;
-   pos periodcentered seven -24;
-   pos periodcentered three -23;
-   pos periodcentered one -16;
-   pos guillemotright quotedblright -23;
-   pos guillemotright quotedbl -14;
-   pos guillemotright quotesingle -14;
-   pos guillemotright quoteright -23;
-   pos questiondown Q -16;
-   pos fraction zero -15;
-   pos fraction eight -15;
-   pos numbersign seven -10;
-   pos Euro zero -12;
-   pos kgreenlandic endash -20;
-   pos kgreenlandic guillemotleft -52;
-   pos kgreenlandic guilsinglleft -52;
-   pos kgreenlandic ordfeminine -10;
-   pos kgreenlandic emdash -20;
-   enum pos @_kernA_leftpair parenright -16;
-   enum pos @_kernC ordfeminine -8;
-   enum pos @_kernC guillemotleft -12;
-   enum pos @_kernC copyright -13;
-   enum pos @_kernC guilsinglleft -12;
-   enum pos @_kernC Q -17;
-   enum pos @_kernC endash -13;
-   enum pos @_kernC emdash -13;
-   enum pos @_kernD parenright -45;
-   enum pos @_kernD seven -14;
-   enum pos @_kernD slash -13;
-   enum pos @_kernD quotedblbase -11;
-   enum pos @_kernD question -14;
-   enum pos @_kernD trademark -11;
-   enum pos @_kernD backslash -12;
-   enum pos @_kernD quotesinglbase -11;
-   enum pos @_kernD bracketright -44;
-   enum pos @_kernD braceright -45;
-   enum pos @_kernE Q -14;
-   enum pos @_kernE ordfeminine -9;
-   enum pos @_kernE guillemotleft -12;
-   enum pos @_kernE copyright -13;
-   enum pos @_kernE guilsinglleft -12;
-   enum pos @_kernE endash -8;
-   enum pos @_kernE emdash -8;
-   enum pos @_kernF ordfeminine -5;
-   enum pos @_kernF guilsinglleft -28;
-   enum pos @_kernF quotedblbase -92;
-   enum pos @_kernF at -15;
-   enum pos @_kernF space -26;
-   enum pos @_kernF slash -66;
-   enum pos @_kernF bracketright -14;
-   enum pos @_kernF guillemotright -10;
-   enum pos @_kernF quotesinglbase -92;
-   enum pos @_kernF guilsinglright -10;
-   enum pos @_kernF asterisk 11;
-   enum pos @_kernF Q -20;
-   enum pos @_kernF guillemotleft -28;
-   enum pos @_kernF b -12;
-   enum pos @_kernF m -12;
-   enum pos @_kernF p -12;
-   enum pos @_kernF braceright -13;
-   enum pos @_kernH parenright -16;
-   enum pos @_kernI parenright -16;
-   enum pos @_kernJ parenright -26;
-   enum pos @_kernJ quotedblbase -21;
-   enum pos @_kernJ quotesinglbase -21;
-   enum pos @_kernJ bracketright -22;
-   enum pos @_kernJ slash -26;
-   enum pos @_kernJ b -6;
-   enum pos @_kernJ m -6;
-   enum pos @_kernJ p -6;
-   enum pos @_kernJ braceright -22;
-   enum pos @_kernK ordfeminine -18;
-   enum pos @_kernK zero -27;
-   enum pos @_kernK endash -41;
-   enum pos @_kernK copyright -27;
-   enum pos @_kernK space -12;
-   enum pos @_kernK slash 15;
-   enum pos @_kernK Q -54;
-   enum pos @_kernK emdash -41;
-   enum pos @_kernK guillemotleft -33;
-   enum pos @_kernK ordmasculine -8;
-   enum pos @_kernK guilsinglleft -33;
-   enum pos @_kernL quoteleft -126;
-   enum pos @_kernL endash -84;
-   enum pos @_kernL trademark -141;
-   enum pos @_kernL backslash -97;
-   enum pos @_kernL four -132;
-   enum pos @_kernL zero -12;
-   enum pos @_kernL ordfeminine -147;
-   enum pos @_kernL quotesingle -108;
-   enum pos @_kernL quotedblright -125;
-   enum pos @_kernL periodcentered -89;
-   enum pos @_kernL copyright -86;
-   enum pos @_kernL space -30;
-   enum pos @_kernL question -78;
-   enum pos @_kernL quoteright -125;
-   enum pos @_kernL quotedbl -108;
-   enum pos @_kernL quotedblleft -126;
-   enum pos @_kernL registered -113;
-   enum pos @_kernL asterisk -145;
-   enum pos @_kernL Q -25;
-   enum pos @_kernL emdash -84;
-   enum pos @_kernL guillemotleft -19;
-   enum pos @_kernL guilsinglleft -19;
-   enum pos @_kernL ordmasculine -144;
-   enum pos @_kernM parenright -16;
-   enum pos @_kernN parenright -16;
-   enum pos @_kernO_leftpair parenright -45;
-   enum pos @_kernO_leftpair seven -14;
-   enum pos @_kernO_leftpair slash -13;
-   enum pos @_kernO_leftpair quotedblbase -11;
-   enum pos @_kernO_leftpair question -14;
-   enum pos @_kernO_leftpair trademark -11;
-   enum pos @_kernO_leftpair backslash -12;
-   enum pos @_kernO_leftpair quotesinglbase -11;
-   enum pos @_kernO_leftpair bracketright -44;
-   enum pos @_kernO_leftpair braceright -45;
-   enum pos @_kernP parenright -41;
-   enum pos @_kernP quotesinglbase -67;
-   enum pos @_kernP space -27;
-   enum pos @_kernP quotedblbase -67;
-   enum pos @_kernP slash -44;
-   enum pos @_kernP bracketright -44;
-   enum pos @_kernP braceright -45;
-   enum pos @_kernR parenright -11;
-   enum pos @_kernR guillemotleft -10;
-   enum pos @_kernR guilsinglleft -10;
-   enum pos @_kernS parenright -21;
-   enum pos @_kernS bracketright -16;
-   enum pos @_kernS braceright -16;
-   enum pos @_kernT endash -81;
-   enum pos @_kernT m -63;
-   enum pos @_kernT quotedblbase -93;
-   enum pos @_kernT zero -11;
-   enum pos @_kernT ordfeminine -10;
-   enum pos @_kernT at -75;
-   enum pos @_kernT copyright -43;
-   enum pos @_kernT space -31;
-   enum pos @_kernT trademark 9;
-   enum pos @_kernT slash -93;
-   enum pos @_kernT bracketright -14;
-   enum pos @_kernT quotesinglbase -93;
-   enum pos @_kernT guilsinglright -75;
-   enum pos @_kernT asterisk 18;
-   enum pos @_kernT Q -23;
-   enum pos @_kernT guillemotright -75;
-   enum pos @_kernT guillemotleft -117;
-   enum pos @_kernT emdash -81;
-   enum pos @_kernT b -63;
-   enum pos @_kernT guilsinglleft -117;
-   enum pos @_kernT p -63;
-   enum pos @_kernT braceright -12;
-   enum pos @_kernU parenright -25;
-   enum pos @_kernU quotedblbase -21;
-   enum pos @_kernU slash -26;
-   enum pos @_kernU bracketright -20;
-   enum pos @_kernU quotesinglbase -21;
-   enum pos @_kernU b -5;
-   enum pos @_kernU m -5;
-   enum pos @_kernU p -5;
-   enum pos @_kernU braceright -20;
-   enum pos @_kernV parenright -22;
-   enum pos @_kernV endash -40;
-   enum pos @_kernV m -49;
-   enum pos @_kernV zero -36;
-   enum pos @_kernV ordfeminine -22;
-   enum pos @_kernV at -54;
-   enum pos @_kernV copyright -47;
-   enum pos @_kernV space -38;
-   enum pos @_kernV six -29;
-   enum pos @_kernV two -22;
-   enum pos @_kernV ampersand -25;
-   enum pos @_kernV slash -94;
-   enum pos @_kernV guillemotright -35;
-   enum pos @_kernV bracketright -22;
-   enum pos @_kernV ordmasculine -6;
-   enum pos @_kernV quotesinglbase -94;
-   enum pos @_kernV guilsinglright -35;
-   enum pos @_kernV asterisk -22;
-   enum pos @_kernV quotedblbase -94;
-   enum pos @_kernV Q -42;
-   enum pos @_kernV eight -38;
-   enum pos @_kernV guillemotleft -77;
-   enum pos @_kernV emdash -40;
-   enum pos @_kernV b -49;
-   enum pos @_kernV guilsinglleft -77;
-   enum pos @_kernV p -49;
-   enum pos @_kernV nine -24;
-   enum pos @_kernV braceright -19;
-   enum pos @_kernW parenright -25;
-   enum pos @_kernW quotedblbase -10;
-   enum pos @_kernW slash -14;
-   enum pos @_kernW bracketright -21;
-   enum pos @_kernW quotesinglbase -10;
-   enum pos @_kernW b -5;
-   enum pos @_kernW m -5;
-   enum pos @_kernW p -5;
-   enum pos @_kernW braceright -21;
-   enum pos @_kernX seven 5;
-   enum pos @_kernX endash -36;
-   enum pos @_kernX backslash 8;
-   enum pos @_kernX zero -24;
-   enum pos @_kernX ordfeminine -14;
-   enum pos @_kernX copyright -26;
-   enum pos @_kernX space -11;
-   enum pos @_kernX trademark 14;
-   enum pos @_kernX slash 5;
-   enum pos @_kernX Q -51;
-   enum pos @_kernX emdash -36;
-   enum pos @_kernX guillemotleft -32;
-   enum pos @_kernX ordmasculine -5;
-   enum pos @_kernX guilsinglleft -32;
-   enum pos @_kernY parenright -24;
-   enum pos @_kernY bracketright -20;
-   enum pos @_kernY braceright -20;
-   enum pos @_kernZ ordfeminine -12;
-   enum pos @_kernZ guillemotleft -12;
-   enum pos @_kernZ copyright -13;
-   enum pos @_kernZ guilsinglleft -12;
-   enum pos @_kernZ Q -12;
-   enum pos @_kernZ endash -13;
-   enum pos @_kernZ emdash -13;
-   enum pos @_kerna_leftpair parenright -25;
-   enum pos @_kerna_leftpair trademark -16;
-   enum pos @_kerna_leftpair backslash -11;
-   enum pos @_kerna_leftpair bracketright -16;
-   enum pos @_kerna_leftpair braceright -17;
-   enum pos @_kernc parenright -14;
-   enum pos @_kernc guillemotleft -27;
-   enum pos @_kernc trademark -9;
-   enum pos @_kernc guilsinglleft -27;
-   enum pos @_kernd parenright -47;
-   enum pos @_kernd trademark -34;
-   enum pos @_kernd backslash -39;
-   enum pos @_kernd quotesingle -9;
-   enum pos @_kernd quotedblleft -19;
-   enum pos @_kernd quotedblright -22;
-   enum pos @_kernd question -32;
-   enum pos @_kernd quoteright -22;
-   enum pos @_kernd bracketright -46;
-   enum pos @_kernd quotedbl -9;
-   enum pos @_kernd quoteleft -19;
-   enum pos @_kernd braceright -47;
-   enum pos @_kerne parenright -15;
-   enum pos @_kerne guillemotleft -18;
-   enum pos @_kerne trademark -10;
-   enum pos @_kerne guilsinglleft -18;
-   enum pos @_kernf parenright -41;
-   enum pos @_kernf guillemotleft -13;
-   enum pos @_kernf quotesinglbase -44;
-   enum pos @_kernf space -22;
-   enum pos @_kernf guilsinglleft -13;
-   enum pos @_kernf quotedblbase -44;
-   enum pos @_kernf slash -40;
-   enum pos @_kernf bracketright -48;
-   enum pos @_kernf braceright -48;
-   enum pos @_kerng parenright -18;
-   enum pos @_kerng trademark -11;
-   enum pos @_kernh parenright -25;
-   enum pos @_kernh question -10;
-   enum pos @_kernh trademark -18;
-   enum pos @_kernh backslash -12;
-   enum pos @_kernh bracketright -16;
-   enum pos @_kernh braceright -17;
-   enum pos @_kerni parenright -25;
-   enum pos @_kerni question -10;
-   enum pos @_kerni trademark -18;
-   enum pos @_kerni backslash -12;
-   enum pos @_kerni bracketright -16;
-   enum pos @_kerni braceright -17;
-   enum pos @_kernj parenright -45;
-   enum pos @_kernj trademark -16;
-   enum pos @_kernj slash -14;
-   enum pos @_kernj bracketright -48;
-   enum pos @_kernj braceright -49;
-   enum pos [k kcommaaccent] endash -20;
-   enum pos [k kcommaaccent] guillemotleft -52;
-   enum pos [k kcommaaccent] guilsinglleft -52;
-   enum pos [k kcommaaccent] ordfeminine -10;
-   enum pos [k kcommaaccent] emdash -20;
-   enum pos @_kernl ordfeminine -110;
-   enum pos @_kernl trademark -129;
-   enum pos @_kernl quotedbl -108;
-   enum pos @_kernl endash -84;
-   enum pos @_kernl quotesingle -108;
-   enum pos @_kernl quotedblright -114;
-   enum pos @_kernl periodcentered -89;
-   enum pos @_kernl copyright -92;
-   enum pos @_kernl space -26;
-   enum pos @_kernl question -81;
-   enum pos @_kernl quoteright -114;
-   enum pos @_kernl quotedblleft -112;
-   enum pos @_kernl registered -109;
-   enum pos @_kernl asterisk -133;
-   enum pos @_kernl quoteleft -112;
-   enum pos @_kernl backslash -101;
-   enum pos @_kernl emdash -84;
-   enum pos @_kernl guillemotleft -49;
-   enum pos @_kernl ordmasculine -112;
-   enum pos @_kernl guilsinglleft -49;
-   enum pos @_kernn parenright -25;
-   enum pos @_kernn trademark -18;
-   enum pos @_kernn question -10;
-   enum pos @_kernn backslash -12;
-   enum pos @_kernn bracketright -16;
-   enum pos @_kernn braceright -17;
-   enum pos @_kerno_leftpair parenright -47;
-   enum pos @_kerno_leftpair trademark -34;
-   enum pos @_kerno_leftpair backslash -39;
-   enum pos @_kerno_leftpair quotesingle -9;
-   enum pos @_kerno_leftpair quotedblleft -19;
-   enum pos @_kerno_leftpair quotedblright -22;
-   enum pos @_kerno_leftpair question -32;
-   enum pos @_kerno_leftpair quoteright -22;
-   enum pos @_kerno_leftpair bracketright -46;
-   enum pos @_kerno_leftpair quotedbl -9;
-   enum pos @_kerno_leftpair quoteleft -19;
-   enum pos @_kerno_leftpair braceright -47;
-   enum pos @_kernq parenright -47;
-   enum pos @_kernq trademark -34;
-   enum pos @_kernq backslash -39;
-   enum pos @_kernq quotesingle -9;
-   enum pos @_kernq quotedblright -22;
-   enum pos @_kernq question -32;
-   enum pos @_kernq quoteright -22;
-   enum pos @_kernq bracketright -46;
-   enum pos @_kernq quotedbl -9;
-   enum pos @_kernq quotedblleft -19;
-   enum pos @_kernq quoteleft -19;
-   enum pos @_kernq braceright -47;
-   enum pos @_kernr parenright -15;
-   enum pos @_kernr quotedblright -11;
-   enum pos @_kernr quotedblleft -8;
-   enum pos @_kernr question -29;
-   enum pos @_kernr trademark -29;
-   enum pos @_kernr backslash -35;
-   enum pos @_kernr quoteleft -8;
-   enum pos @_kernr quoteright -11;
-   enum pos @_kerns parenright -33;
-   enum pos @_kerns question -11;
-   enum pos @_kerns trademark -21;
-   enum pos @_kerns backslash -12;
-   enum pos @_kerns bracketright -32;
-   enum pos @_kerns braceright -32;
-   enum pos @_kernt parenright -42;
-   enum pos @_kernt guillemotleft -57;
-   enum pos @_kernt quotesinglbase -70;
-   enum pos @_kernt space -26;
-   enum pos @_kernt guilsinglleft -57;
-   enum pos @_kernt quotedblbase -70;
-   enum pos @_kernt slash -61;
-   enum pos @_kernt bracketright -48;
-   enum pos @_kernt braceright -48;
-   enum pos @_kernu parenright -45;
-   enum pos @_kernu trademark -16;
-   enum pos @_kernu slash -14;
-   enum pos @_kernu bracketright -48;
-   enum pos @_kernu braceright -49;
-   enum pos @_kernv parenright -44;
-   enum pos @_kernv ordfeminine -9;
-   enum pos @_kernv at -21;
-   enum pos @_kernv copyright -12;
-   enum pos @_kernv space -33;
-   enum pos @_kernv trademark -10;
-   enum pos @_kernv slash -55;
-   enum pos @_kernv bracketright -52;
-   enum pos @_kernv quotesinglbase -64;
-   enum pos @_kernv quotedblbase -64;
-   enum pos @_kernv guillemotleft -46;
-   enum pos @_kernv guilsinglleft -46;
-   enum pos @_kernv braceright -51;
-   enum pos @_kernw parenright -40;
-   enum pos @_kernw trademark -17;
-   enum pos @_kernw backslash -10;
-   enum pos @_kernw bracketright -41;
-   enum pos @_kernw braceright -41;
-   enum pos @_kernx endash -12;
-   enum pos @_kernx guillemotleft -50;
-   enum pos @_kernx guilsinglleft -50;
-   enum pos @_kernx emdash -12;
-   enum pos @_kerny parenright -39;
-   enum pos @_kerny trademark -17;
-   enum pos @_kerny backslash -10;
-   enum pos @_kerny bracketright -39;
-   enum pos @_kerny braceright -39;
-   enum pos @_kernz parenright -15;
-   enum pos @_kernz guillemotleft -26;
-   enum pos @_kernz guilsinglleft -26;
-   enum pos @_kernz trademark -16;
-   enum pos @_kernhyphen three -16;
-   enum pos @_kernhyphen seven -19;
-   subtable;
-   enum pos space @_kernV -38;
-   enum pos space @_kernt -26;
-   enum pos space @_kernv -33;
-   enum pos space @_kernX -11;
-   enum pos space @_kernT -31;
-   enum pos ampersand @_kernZ -11;
-   enum pos ampersand @_kernJ -10;
-   enum pos ampersand @_kernT -18;
-   enum pos ampersand @_kernV -31;
-   enum pos parenleft @_kernA_rightpair -23;
-   enum pos parenleft @_kernC -45;
-   enum pos parenleft @_kernE -17;
-   enum pos parenleft @_kernD -17;
-   enum pos parenleft @_kernG -45;
-   enum pos parenleft @_kernF -17;
-   enum pos parenleft @_kernI -17;
-   enum pos parenleft @_kernH -17;
-   enum pos parenleft @_kernK -17;
-   enum pos parenleft @_kernM -17;
-   enum pos parenleft @_kernL -17;
-   enum pos parenleft @_kernO_rightpair -45;
-   enum pos parenleft @_kernN -17;
-   enum pos parenleft @_kernP -17;
-   enum pos parenleft @_kernS -12;
-   enum pos parenleft @_kernR -17;
-   enum pos parenleft @_kernU -26;
-   enum pos parenleft @_kernW -25;
-   enum pos parenleft @_kernV -22;
-   enum pos parenleft @_kerna_rightpair -27;
-   enum pos parenleft @_kernc -47;
-   enum pos parenleft @_kerne -25;
-   enum pos parenleft @_kernd -25;
-   enum pos parenleft @_kerng -47;
-   enum pos parenleft @_kernf -25;
-   enum pos parenleft @_kerni -25;
-   enum pos parenleft @_kernh -25;
-   enum pos parenleft @_kernk -25;
-   enum pos parenleft @_kernj -14;
-   enum pos parenleft @_kernl -25;
-   enum pos parenleft @_kerno_rightpair -47;
-   enum pos parenleft @_kernn -25;
-   enum pos parenleft @_kernq -47;
-   enum pos parenleft @_kerns -22;
-   enum pos parenleft @_kernr -25;
-   enum pos parenleft @_kernu -45;
-   enum pos parenleft @_kernt -42;
-   enum pos parenleft @_kernw -40;
-   enum pos parenleft @_kernv -44;
-   enum pos parenleft @_kerny -21;
-   enum pos parenleft @_kernz -15;
-   enum pos asterisk @_kerna_rightpair -10;
-   enum pos asterisk @_kernT 17;
-   enum pos asterisk @_kernV -22;
-   enum pos slash @_kernA_rightpair -24;
-   enum pos slash @_kernC -12;
-   enum pos slash @_kernG -12;
-   enum pos slash @_kernO_rightpair -12;
-   enum pos slash @_kernX 8;
-   enum pos slash @_kerna_rightpair -49;
-   enum pos slash @_kernc -39;
-   enum pos slash @_kerne -12;
-   enum pos slash @_kernd -12;
-   enum pos slash @_kerng -39;
-   enum pos slash @_kernf -12;
-   enum pos slash @_kerni -12;
-   enum pos slash @_kernh -12;
-   enum pos slash @_kernk -12;
-   enum pos slash @_kernl -12;
-   enum pos slash @_kerno_rightpair -39;
-   enum pos slash @_kernn -12;
-   enum pos slash @_kernq -39;
-   enum pos slash @_kerns -29;
-   enum pos slash @_kernr -12;
-   enum pos slash @_kernw -10;
-   enum pos zero @_kernZ -10;
-   enum pos zero @_kernJ -10;
-   enum pos zero @_kernX -25;
-   enum pos zero @_kerncomma -10;
-   enum pos zero @_kernT -12;
-   enum pos zero @_kernV -37;
-   enum pos zero @_kernperiod -10;
-   enum pos two @_kernV -25;
-   enum pos three @_kernV -26;
-   enum pos five @_kernV -18;
-   enum pos six @_kernV -18;
-   enum pos seven @_kernA_rightpair -19;
-   enum pos seven @_kerncomma -101;
-   enum pos seven @_kernperiod -101;
-   enum pos seven @_kernT 16;
-   enum pos seven @_kernV 10;
-   enum pos seven @_kernX 20;
-   enum pos seven @_kernhyphen -17;
-   enum pos eight @_kernV -40;
-   enum pos nine @_kernV -29;
-   enum pos at @_kernV -49;
-   enum pos at @_kernT -72;
-   enum pos at @_kernv -17;
-   enum pos B @_kernJ -11;
-   enum pos B @_kernV -70;
-   enum pos B @_kernt -45;
-   enum pos B @_kernS -5;
-   enum pos B @_kernU -5;
-   enum pos B @_kernT -49;
-   enum pos B @_kernX -39;
-   enum pos B @_kernv -34;
-   enum pos B @_kernY -6;
-   enum pos B @_kernx -32;
-   enum pos B @_kernZ -7;
-   enum pos Q @_kernx -19;
-   enum pos Q @_kernV -42;
-   enum pos Q @_kernj -6;
-   enum pos Q @_kernperiod -11;
-   enum pos Q @_kernJ -17;
-   enum pos Q @_kerncomma -11;
-   enum pos Q @_kernT -23;
-   enum pos Q @_kernv -7;
-   enum pos Q @_kernX -50;
-   enum pos Q @_kernZ -12;
-   enum pos bracketleft @_kernA_rightpair -13;
-   enum pos bracketleft @_kernC -44;
-   enum pos bracketleft @_kernG -44;
-   enum pos bracketleft @_kernO_rightpair -44;
-   enum pos bracketleft @_kernT -10;
-   enum pos bracketleft @_kernW -21;
-   enum pos bracketleft @_kernV -17;
-   enum pos bracketleft @_kerna_rightpair -14;
-   enum pos bracketleft @_kernc -46;
-   enum pos bracketleft @_kerne -16;
-   enum pos bracketleft @_kernd -16;
-   enum pos bracketleft @_kerng -46;
-   enum pos bracketleft @_kernf -16;
-   enum pos bracketleft @_kerni -16;
-   enum pos bracketleft @_kernh -16;
-   enum pos bracketleft @_kernk -16;
-   enum pos bracketleft @_kernl -16;
-   enum pos bracketleft @_kerno_rightpair -46;
-   enum pos bracketleft @_kernn -16;
-   enum pos bracketleft @_kernq -46;
-   enum pos bracketleft @_kernr -16;
-   enum pos bracketleft @_kernu -48;
-   enum pos bracketleft @_kernt -48;
-   enum pos bracketleft @_kernw -41;
-   enum pos bracketleft @_kernv -52;
-   enum pos bracketleft @_kernU -23;
-   enum pos backslash @_kernC -14;
-   enum pos backslash @_kernG -14;
-   enum pos backslash @_kernV -94;
-   enum pos backslash @_kernO_rightpair -14;
-   enum pos backslash @_kernu -14;
-   enum pos backslash @_kernt -61;
-   enum pos backslash @_kernW -14;
-   enum pos backslash @_kernv -55;
-   enum pos backslash @_kernX 5;
-   enum pos backslash @_kernU -25;
-   enum pos backslash @_kernT -93;
-   enum pos b @_kernj -6;
-   enum pos b @_kernt -41;
-   enum pos b @_kernv -46;
-   enum pos b @_kerny -4;
-   enum pos b @_kernx -30;
-   enum pos b @_kernz -4;
-   enum pos p @_kerncomma -24;
-   enum pos p @_kernj -8;
-   enum pos p @_kernperiod -24;
-   enum pos p @_kernv -16;
-   enum pos p @_kernx -31;
-   enum pos p @_kernz -4;
-   enum pos braceleft @_kernu -49;
-   enum pos braceleft @_kernA_rightpair -14;
-   enum pos braceleft @_kernC -46;
-   enum pos braceleft @_kernG -46;
-   enum pos braceleft @_kernO_rightpair -46;
-   enum pos braceleft @_kernU -23;
-   enum pos braceleft @_kernW -21;
-   enum pos braceleft @_kernV -13;
-   enum pos braceleft @_kerna_rightpair -15;
-   enum pos braceleft @_kernc -47;
-   enum pos braceleft @_kerne -17;
-   enum pos braceleft @_kernd -17;
-   enum pos braceleft @_kerng -47;
-   enum pos braceleft @_kernf -17;
-   enum pos braceleft @_kerni -17;
-   enum pos braceleft @_kernh -17;
-   enum pos braceleft @_kernk -17;
-   enum pos braceleft @_kernl -17;
-   enum pos braceleft @_kerno_rightpair -47;
-   enum pos braceleft @_kernn -17;
-   enum pos braceleft @_kernq -47;
-   enum pos braceleft @_kernr -17;
-   enum pos braceleft @_kernt -48;
-   enum pos braceleft @_kernw -41;
-   enum pos braceleft @_kernv -52;
-   enum pos guilsinglleft @_kernT -75;
-   enum pos guilsinglleft @_kernV -35;
-   enum pos guilsinglright @_kernJ -12;
-   enum pos guilsinglright @_kernZ -13;
-   enum pos guilsinglright @_kernj -26;
-   enum pos guilsinglright @_kernV -77;
-   enum pos guilsinglright @_kernT -117;
-   enum pos guilsinglright @_kernX -32;
-   enum pos guilsinglright @_kernv -46;
-   enum pos guilsinglright @_kernY -10;
-   enum pos guilsinglright @_kernx -50;
-   enum pos guilsinglright @_kernz -26;
-   enum pos guilsinglright @_kernt -57;
-   enum pos period @_kernG -11;
-   enum pos period @_kernV -94;
-   enum pos period @_kernC -11;
-   enum pos period @_kernO_rightpair -11;
-   enum pos period @_kernU -21;
-   enum pos period @_kernT -93;
-   enum pos period @_kernW -10;
-   enum pos period @_kernv -64;
-   enum pos period @_kernu -8;
-   enum pos period @_kernt -70;
-   enum pos comma @_kernG -11;
-   enum pos comma @_kernV -94;
-   enum pos comma @_kernC -11;
-   enum pos comma @_kernO_rightpair -11;
-   enum pos comma @_kernU -21;
-   enum pos comma @_kernT -93;
-   enum pos comma @_kernW -10;
-   enum pos comma @_kernv -64;
-   enum pos comma @_kernu -8;
-   enum pos comma @_kernt -70;
-   enum pos quotesinglbase @_kernO_rightpair -11;
-   enum pos quotesinglbase @_kernC -11;
-   enum pos quotesinglbase @_kernG -11;
-   enum pos quotesinglbase @_kernv -64;
-   enum pos quotesinglbase @_kernu -8;
-   enum pos quotesinglbase @_kernt -70;
-   enum pos quotesinglbase @_kernW -10;
-   enum pos quotesinglbase @_kernV -94;
-   enum pos quotesinglbase @_kernU -21;
-   enum pos quotesinglbase @_kernT -93;
-   enum pos quotedblbase @_kernG -11;
-   enum pos quotedblbase @_kernV -94;
-   enum pos quotedblbase @_kernC -11;
-   enum pos quotedblbase @_kernO_rightpair -11;
-   enum pos quotedblbase @_kernU -21;
-   enum pos quotedblbase @_kernT -93;
-   enum pos quotedblbase @_kernW -10;
-   enum pos quotedblbase @_kernv -64;
-   enum pos quotedblbase @_kernu -8;
-   enum pos quotedblbase @_kernt -70;
-   enum pos quoteright @_kernA_rightpair -11;
-   enum pos quoteright @_kerna_rightpair -28;
-   enum pos quoteright @_kernc -20;
-   enum pos quoteright @_kerng -20;
-   enum pos quoteright @_kernperiod -109;
-   enum pos quoteright @_kerno_rightpair -20;
-   enum pos quoteright @_kernq -20;
-   enum pos quoteright @_kerns -9;
-   enum pos quoteright @_kerncomma -109;
-   enum pos quotedblright @_kernA_rightpair -11;
-   enum pos quotedblright @_kerna_rightpair -28;
-   enum pos quotedblright @_kernc -20;
-   enum pos quotedblright @_kerng -20;
-   enum pos quotedblright @_kernperiod -109;
-   enum pos quotedblright @_kerno_rightpair -20;
-   enum pos quotedblright @_kernq -20;
-   enum pos quotedblright @_kerns -9;
-   enum pos quotedblright @_kerncomma -109;
-   enum pos quotedblleft @_kerna_rightpair -27;
-   enum pos quotedblleft @_kernA_rightpair -9;
-   enum pos quotedblleft @_kernc -19;
-   enum pos quotedblleft @_kerng -19;
-   enum pos quotedblleft @_kerno_rightpair -19;
-   enum pos quotedblleft @_kernperiod -109;
-   enum pos quotedblleft @_kernq -19;
-   enum pos quotedblleft @_kerncomma -109;
-   enum pos quoteleft @_kernA_rightpair -9;
-   enum pos quoteleft @_kerna_rightpair -27;
-   enum pos quoteleft @_kernc -19;
-   enum pos quoteleft @_kerng -19;
-   enum pos quoteleft @_kernperiod -109;
-   enum pos quoteleft @_kerno_rightpair -19;
-   enum pos quoteleft @_kernq -19;
-   enum pos quoteleft @_kerncomma -109;
-   enum pos endash @_kernJ -13;
-   enum pos endash @_kernV -40;
-   enum pos endash @_kernT -81;
-   enum pos endash @_kernX -35;
-   enum pos endash @_kernx -12;
-   enum pos endash @_kernZ -13;
-   enum pos emdash @_kernJ -13;
-   enum pos emdash @_kernT -81;
-   enum pos emdash @_kernX -35;
-   enum pos emdash @_kernV -40;
-   enum pos emdash @_kernx -12;
-   enum pos emdash @_kernZ -13;
-   enum pos colon @_kernT -18;
-   enum pos colon @_kernV -31;
-   enum pos semicolon @_kernT -18;
-   enum pos semicolon @_kernV -31;
-   enum pos quotedbl @_kerna_rightpair -17;
-   enum pos quotedbl @_kernc -9;
-   enum pos quotedbl @_kerng -9;
-   enum pos quotedbl @_kernperiod -99;
-   enum pos quotedbl @_kerno_rightpair -9;
-   enum pos quotedbl @_kernq -9;
-   enum pos quotedbl @_kerncomma -99;
-   enum pos quotesingle @_kerna_rightpair -17;
-   enum pos quotesingle @_kernc -9;
-   enum pos quotesingle @_kerng -9;
-   enum pos quotesingle @_kernperiod -99;
-   enum pos quotesingle @_kerno_rightpair -9;
-   enum pos quotesingle @_kernq -9;
-   enum pos quotesingle @_kerncomma -99;
-   enum pos guillemotleft @_kernT -75;
-   enum pos guillemotleft @_kernV -35;
-   enum pos guillemotright @_kernZ -13;
-   enum pos guillemotright @_kernV -77;
-   enum pos guillemotright @_kernj -26;
-   enum pos guillemotright @_kernT -117;
-   enum pos guillemotright @_kernX -32;
-   enum pos guillemotright @_kernv -46;
-   enum pos guillemotright @_kernY -10;
-   enum pos guillemotright @_kernx -50;
-   enum pos guillemotright @_kernz -26;
-   enum pos guillemotright @_kernJ -12;
-   enum pos guillemotright @_kernt -57;
-   enum pos questiondown @_kernC -16;
-   enum pos questiondown @_kernG -16;
-   enum pos questiondown @_kernV -96;
-   enum pos questiondown @_kernO_rightpair -16;
-   enum pos questiondown @_kernU -30;
-   enum pos questiondown @_kernt -65;
-   enum pos questiondown @_kernW -13;
-   enum pos questiondown @_kernv -55;
-   enum pos questiondown @_kernT -76;
-   enum pos kgreenlandic @_kernq -39;
-   enum pos kgreenlandic @_kernc -39;
-   enum pos kgreenlandic @_kerng -39;
-   enum pos kgreenlandic @_kerno_rightpair -39;
-   enum pos kgreenlandic @_kernhyphen -20;
-   subtable;
-   pos @_kernA_leftpair @_kerna_rightpair -5;
-   pos @_kernA_leftpair @_kernc -5;
-   pos @_kernA_leftpair @_kerng -5;
-   pos @_kernA_leftpair @_kerno_rightpair -5;
-   pos @_kernA_leftpair @_kernq -5;
-   pos @_kernA_leftpair @_kernu -5;
-   pos @_kernC @_kernq -10;
-   pos @_kernC @_kernc -10;
-   pos @_kernC @_kerng -10;
-   pos @_kernC @_kernhyphen -13;
-   pos @_kernC @_kernG -17;
-   pos @_kernC @_kernC -17;
-   pos @_kernC @_kernO_rightpair -17;
-   pos @_kernC @_kernu -5;
-   pos @_kernC @_kerno_rightpair -10;
-   pos @_kernD @_kernx -19;
-   pos @_kernD @_kernj -6;
-   pos @_kernD @_kernv -7;
-   pos @_kernD @_kernJ -17;
-   pos @_kernD @_kernperiod -11;
-   pos @_kernD @_kerncomma -11;
-   pos @_kernD @_kernT -23;
-   pos @_kernD @_kernV -42;
-   pos @_kernD @_kernX -50;
-   pos @_kernD @_kernZ -12;
-   pos @_kernE @_kernC -14;
-   pos @_kernE @_kernG -14;
-   pos @_kernE @_kernhyphen -8;
-   pos @_kernE @_kernc -10;
-   pos @_kernE @_kernO_rightpair -14;
-   pos @_kernE @_kernq -10;
-   pos @_kernE @_kerng -10;
-   pos @_kernE @_kernu -6;
-   pos @_kernE @_kerno_rightpair -10;
-   pos @_kernF @_kerncomma -92;
-   pos @_kernF @_kerni -12;
-   pos @_kernF @_kernA_rightpair -19;
-   pos @_kernF @_kernG -20;
-   pos @_kernF @_kernO_rightpair -20;
-   pos @_kernF @_kernperiod -92;
-   pos @_kernF @_kerna_rightpair -52;
-   pos @_kernF @_kernc -34;
-   pos @_kernF @_kerne -12;
-   pos @_kernF @_kernd -12;
-   pos @_kernF @_kerng -34;
-   pos @_kernF @_kernf -12;
-   pos @_kernF @_kernC -20;
-   pos @_kernF @_kernh -12;
-   pos @_kernF @_kernk -12;
-   pos @_kernF @_kernl -12;
-   pos @_kernF @_kerno_rightpair -34;
-   pos @_kernF @_kernn -12;
-   pos @_kernF @_kernq -34;
-   pos @_kernF @_kerns -28;
-   pos @_kernF @_kernr -12;
-   pos @_kernF @_kernu -6;
-   pos @_kernF @_kernw -8;
-   pos @_kernF @_kerny -6;
-   pos @_kernG @_kernv -5;
-   pos @_kernG @_kernV -5;
-   pos @_kernH @_kerna_rightpair -5;
-   pos @_kernH @_kernc -5;
-   pos @_kernH @_kerng -5;
-   pos @_kernH @_kerno_rightpair -5;
-   pos @_kernH @_kernq -5;
-   pos @_kernH @_kernu -5;
-   pos @_kernI @_kerna_rightpair -5;
-   pos @_kernI @_kernc -5;
-   pos @_kernI @_kerng -5;
-   pos @_kernI @_kerno_rightpair -5;
-   pos @_kernI @_kernq -5;
-   pos @_kernI @_kernu -5;
-   pos @_kernJ @_kerncomma -21;
-   pos @_kernJ @_kernperiod -21;
-   pos @_kernJ @_kerna_rightpair -15;
-   pos @_kernJ @_kernc -6;
-   pos @_kernJ @_kerne -6;
-   pos @_kernJ @_kernd -6;
-   pos @_kernJ @_kerng -6;
-   pos @_kernJ @_kernf -6;
-   pos @_kernJ @_kerni -6;
-   pos @_kernJ @_kernh -6;
-   pos @_kernJ @_kernk -6;
-   pos @_kernJ @_kernl -6;
-   pos @_kernJ @_kerno_rightpair -6;
-   pos @_kernJ @_kernn -6;
-   pos @_kernJ @_kernq -6;
-   pos @_kernJ @_kerns -8;
-   pos @_kernJ @_kernr -6;
-   pos @_kernJ @_kernw -5;
-   pos @_kernJ @_kerny -5;
-   pos @_kernJ @_kernz -5;
-   pos @_kernK @_kernhyphen -41;
-   pos @_kernK @_kernC -54;
-   pos @_kernK @_kernG -54;
-   pos @_kernK @_kernO_rightpair -54;
-   pos @_kernK @_kernU -5;
-   pos @_kernK @_kerna_rightpair -6;
-   pos @_kernK @_kernc -41;
-   pos @_kernK @_kerng -41;
-   pos @_kernK @_kerno_rightpair -41;
-   pos @_kernK @_kernq -41;
-   pos @_kernK @_kernu -37;
-   pos @_kernK @_kernt -55;
-   pos @_kernK @_kernw -24;
-   pos @_kernK @_kernv -47;
-   pos @_kernL @_kernhyphen -84;
-   pos @_kernL @_kernG -25;
-   pos @_kernL @_kernO_rightpair -25;
-   pos @_kernL @_kernU -46;
-   pos @_kernL @_kernT -173;
-   pos @_kernL @_kernW -17;
-   pos @_kernL @_kernV -145;
-   pos @_kernL @_kernc -7;
-   pos @_kernL @_kerng -7;
-   pos @_kernL @_kernC -25;
-   pos @_kernL @_kerno_rightpair -7;
-   pos @_kernL @_kernq -7;
-   pos @_kernL @_kernu -23;
-   pos @_kernL @_kernt -153;
-   pos @_kernL @_kernw -6;
-   pos @_kernL @_kernv -127;
-   pos @_kernM @_kerna_rightpair -5;
-   pos @_kernM @_kernc -5;
-   pos @_kernM @_kerng -5;
-   pos @_kernM @_kerno_rightpair -5;
-   pos @_kernM @_kernq -5;
-   pos @_kernM @_kernu -5;
-   pos @_kernN @_kerna_rightpair -5;
-   pos @_kernN @_kernc -5;
-   pos @_kernN @_kerng -5;
-   pos @_kernN @_kerno_rightpair -5;
-   pos @_kernN @_kernq -5;
-   pos @_kernN @_kernu -5;
-   pos @_kernO_leftpair @_kernx -19;
-   pos @_kernO_leftpair @_kernj -6;
-   pos @_kernO_leftpair @_kernv -7;
-   pos @_kernO_leftpair @_kernJ -17;
-   pos @_kernO_leftpair @_kernperiod -11;
-   pos @_kernO_leftpair @_kerncomma -11;
-   pos @_kernO_leftpair @_kernT -23;
-   pos @_kernO_leftpair @_kernV -42;
-   pos @_kernO_leftpair @_kernX -50;
-   pos @_kernO_leftpair @_kernZ -12;
-   pos @_kernP @_kerna_rightpair -9;
-   pos @_kernP @_kernJ -14;
-   pos @_kernP @_kernperiod -67;
-   pos @_kernP @_kerncomma -67;
-   pos @_kernP @_kernV -24;
-   pos @_kernP @_kernX -40;
-   pos @_kernP @_kernZ -8;
-   pos @_kernR @_kerna_rightpair -5;
-   pos @_kernR @_kernc -6;
-   pos @_kernR @_kerng -6;
-   pos @_kernR @_kernV -31;
-   pos @_kernR @_kerno_rightpair -6;
-   pos @_kernR @_kernq -6;
-   pos @_kernR @_kernT -8;
-   pos @_kernR @_kernv -5;
-   pos @_kernS @_kernx -5;
-   pos @_kernS @_kernV -17;
-   pos @_kernS @_kernt -18;
-   pos @_kernS @_kernv -18;
-   pos @_kernS @_kernX -6;
-   pos @_kernT @_kernsemicolon -18;
-   pos @_kernT @_kernhyphen -81;
-   pos @_kernT @_kerncomma -93;
-   pos @_kernT @_kernG -23;
-   pos @_kernT @_kernA_rightpair -41;
-   pos @_kernT @_kernC -23;
-   pos @_kernT @_kerncolon -18;
-   pos @_kernT @_kernO_rightpair -23;
-   pos @_kernT @_kernperiod -93;
-   pos @_kernT @_kerna_rightpair -139;
-   pos @_kernT @_kernc -110;
-   pos @_kernT @_kerne -63;
-   pos @_kernT @_kernd -63;
-   pos @_kernT @_kerng -110;
-   pos @_kernT @_kernf -63;
-   pos @_kernT @_kerni -63;
-   pos @_kernT @_kernh -63;
-   pos @_kernT @_kernk -63;
-   pos @_kernT @_kernj -104;
-   pos @_kernT @_kernl -63;
-   pos @_kernT @_kerno_rightpair -110;
-   pos @_kernT @_kernn -63;
-   pos @_kernT @_kernq -110;
-   pos @_kernT @_kerns -129;
-   pos @_kernT @_kernr -63;
-   pos @_kernT @_kernu -55;
-   pos @_kernT @_kernt -80;
-   pos @_kernT @_kernw -57;
-   pos @_kernT @_kerny -90;
-   pos @_kernT @_kernx -72;
-   pos @_kernT @_kernz -86;
-   pos @_kernU @_kerncomma -21;
-   pos @_kernU @_kernperiod -21;
-   pos @_kernU @_kerna_rightpair -11;
-   pos @_kernU @_kernc -5;
-   pos @_kernU @_kerne -5;
-   pos @_kernU @_kernd -5;
-   pos @_kernU @_kerng -5;
-   pos @_kernU @_kernf -5;
-   pos @_kernU @_kerni -5;
-   pos @_kernU @_kernh -5;
-   pos @_kernU @_kernk -5;
-   pos @_kernU @_kernl -5;
-   pos @_kernU @_kerno_rightpair -5;
-   pos @_kernU @_kernn -5;
-   pos @_kernU @_kernq -5;
-   pos @_kernU @_kerns -6;
-   pos @_kernU @_kernr -5;
-   pos @_kernV @_kernsemicolon -31;
-   pos @_kernV @_kernhyphen -40;
-   pos @_kernV @_kernperiod -94;
-   pos @_kernV @_kerncomma -94;
-   pos @_kernV @_kernG -42;
-   pos @_kernV @_kernu -40;
-   pos @_kernV @_kernA_rightpair -62;
-   pos @_kernV @_kernC -42;
-   pos @_kernV @_kerncolon -31;
-   pos @_kernV @_kernO_rightpair -42;
-   pos @_kernV @_kernS -28;
-   pos @_kernV @_kerna_rightpair -84;
-   pos @_kernV @_kernc -78;
-   pos @_kernV @_kerne -49;
-   pos @_kernV @_kernd -49;
-   pos @_kernV @_kerng -78;
-   pos @_kernV @_kernf -49;
-   pos @_kernV @_kerni -49;
-   pos @_kernV @_kernh -49;
-   pos @_kernV @_kernk -49;
-   pos @_kernV @_kernj -23;
-   pos @_kernV @_kernl -49;
-   pos @_kernV @_kerno_rightpair -78;
-   pos @_kernV @_kernn -49;
-   pos @_kernV @_kernq -78;
-   pos @_kernV @_kerns -67;
-   pos @_kernV @_kernr -49;
-   pos @_kernV @_kernw -44;
-   pos @_kernV @_kerny -37;
-   pos @_kernV @_kernx -7;
-   pos @_kernV @_kernz -28;
-   pos @_kernW @_kerncomma -10;
-   pos @_kernW @_kernperiod -10;
-   pos @_kernW @_kerna_rightpair -10;
-   pos @_kernW @_kernc -5;
-   pos @_kernW @_kerne -5;
-   pos @_kernW @_kernd -5;
-   pos @_kernW @_kerng -5;
-   pos @_kernW @_kernf -5;
-   pos @_kernW @_kerni -5;
-   pos @_kernW @_kernh -5;
-   pos @_kernW @_kernk -5;
-   pos @_kernW @_kernl -5;
-   pos @_kernW @_kerno_rightpair -5;
-   pos @_kernW @_kernn -5;
-   pos @_kernW @_kernq -5;
-   pos @_kernW @_kerns -6;
-   pos @_kernW @_kernr -5;
-   pos @_kernX @_kernhyphen -36;
-   pos @_kernX @_kernC -51;
-   pos @_kernX @_kernG -51;
-   pos @_kernX @_kernO_rightpair -51;
-   pos @_kernX @_kernc -44;
-   pos @_kernX @_kerng -44;
-   pos @_kernX @_kerno_rightpair -44;
-   pos @_kernX @_kernq -44;
-   pos @_kernX @_kernu -32;
-   pos @_kernX @_kernt -26;
-   pos @_kernX @_kernw -21;
-   pos @_kernX @_kernv -25;
-   pos @_kernY @_kerna_rightpair -8;
-   pos @_kernY @_kernc -5;
-   pos @_kernY @_kerng -5;
-   pos @_kernY @_kerno_rightpair -5;
-   pos @_kernY @_kernq -5;
-   pos @_kernY @_kerns -5;
-   pos @_kernZ @_kerna_rightpair -5;
-   pos @_kernZ @_kernq -11;
-   pos @_kernZ @_kernc -11;
-   pos @_kernZ @_kerng -11;
-   pos @_kernZ @_kernhyphen -13;
-   pos @_kernZ @_kernG -12;
-   pos @_kernZ @_kernC -12;
-   pos @_kernZ @_kernO_rightpair -12;
-   pos @_kernZ @_kernu -10;
-   pos @_kernZ @_kerno_rightpair -11;
-   pos @_kernZ @_kernw -6;
-   pos @_kernc @_kerng -11;
-   pos @_kernc @_kernc -11;
-   pos @_kernc @_kerno_rightpair -11;
-   pos @_kernc @_kernq -11;
-   pos @_kernd @_kernj -10;
-   pos @_kernd @_kernt -8;
-   pos @_kernd @_kernv -29;
-   pos @_kernd @_kernx -36;
-   pos @_kernd @_kernz -6;
-   pos @_kerne @_kerng -10;
-   pos @_kerne @_kernc -10;
-   pos @_kerne @_kerno_rightpair -10;
-   pos @_kerne @_kernq -10;
-   pos @_kernf @_kerna_rightpair -11;
-   pos @_kernf @_kernc -13;
-   pos @_kernf @_kerng -13;
-   pos @_kernf @_kerno_rightpair -13;
-   pos @_kernf @_kernperiod -44;
-   pos @_kernf @_kernq -13;
-   pos @_kernf @_kerncomma -44;
-   pos @_kernk @_kernq -39;
-   pos @_kernk @_kernc -39;
-   pos @_kernk @_kerng -39;
-   pos @_kernk @_kerno_rightpair -39;
-   pos @_kernk @_kernhyphen -20;
-   pos @_kernl @_kernhyphen -84;
-   pos @_kernl @_kernc -9;
-   pos @_kernl @_kerng -9;
-   pos @_kernl @_kerno_rightpair -9;
-   pos @_kernl @_kernq -9;
-   pos @_kernl @_kernu -24;
-   pos @_kernl @_kernt -120;
-   pos @_kernl @_kernw -7;
-   pos @_kernl @_kernv -104;
-   pos @_kerno_leftpair @_kernj -10;
-   pos @_kerno_leftpair @_kernt -8;
-   pos @_kerno_leftpair @_kernv -29;
-   pos @_kerno_leftpair @_kernx -36;
-   pos @_kerno_leftpair @_kernz -6;
-   pos @_kernq @_kernj -10;
-   pos @_kernq @_kernt -8;
-   pos @_kernq @_kernv -29;
-   pos @_kernq @_kernx -36;
-   pos @_kernq @_kernz -6;
-   pos @_kernr @_kernv -25;
-   pos @_kernr @_kernt -5;
-   pos @_kerns @_kernv -10;
-   pos @_kerns @_kernx -4;
-   pos @_kernt @_kerna_rightpair -25;
-   pos @_kernt @_kernc -9;
-   pos @_kernt @_kerng -9;
-   pos @_kernt @_kerno_rightpair -9;
-   pos @_kernt @_kernperiod -70;
-   pos @_kernt @_kernq -9;
-   pos @_kernt @_kerncomma -70;
-   pos @_kernv @_kernperiod -64;
-   pos @_kernv @_kerncomma -64;
-   pos @_kernv @_kerna_rightpair -44;
-   pos @_kernv @_kernc -29;
-   pos @_kernv @_kerng -29;
-   pos @_kernv @_kerno_rightpair -29;
-   pos @_kernv @_kernq -29;
-   pos @_kernv @_kerns -19;
-   pos @_kernx @_kernq -37;
-   pos @_kernx @_kernc -37;
-   pos @_kernx @_kerng -37;
-   pos @_kernx @_kernhyphen -12;
-   pos @_kernx @_kerno_rightpair -37;
-   pos @_kernz @_kernc -6;
-   pos @_kernz @_kerng -6;
-   pos @_kernz @_kerno_rightpair -6;
-   pos @_kernz @_kernq -6;
-   pos @_kernhyphen @_kernV -40;
-   pos @_kernhyphen @_kernJ -13;
-   pos @_kernhyphen @_kernT -81;
-   pos @_kernhyphen @_kernx -12;
-   pos @_kernhyphen @_kernX -35;
-   pos @_kernhyphen @_kernZ -13;";
-tag = kern;
+automatic = 1;
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningNonTopAccents = [cedillacomb ogonekcomb];
+	sub [i j]' @CombiningTopAccents by [idotless jdotless];
+	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+} ccmp_Other_1;
+
+lookup ccmp_latn_1 {
+	sub fi by f i;
+	sub fl by f l;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
+";
+tag = ccmp;
 },
 {
+automatic = 1;
+code = "lookup locl_latn_0 {
+	script latn;
+	language ROM;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	language MOL;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language CAT;
+	sub  l' periodcentered' l by ldot;
+	sub  L' periodcentered' L by Ldot;
+} locl_latn_1;
+";
+tag = locl;
+},
+{
+automatic = 1;
 code = "sub one by onesuperior;
 sub two by twosuperior;
 sub three by threesuperior;
- # sub @stdchars by @allinferiors;
- # pos @allinferiors <0 192 0 0>;";
+";
 tag = sups;
 },
 {
-code = " # Discrentionary Ligatures
- # Latin
- #	  sub	f f by ff;
-    sub f i by fi;
-    sub f l by fl;
- #   sub f f i by ffi;
- #   sub f f l by ffl;";
-tag = liga;
+automatic = 1;
+code = "sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+";
+tag = frac;
 },
 {
-code = " # Ordinals
- #Latin
-  sub @all_figures [a o]' by [ordfeminine ordmasculine];";
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+";
 tag = ordn;
 },
 {
-code = " 
-
-sub zero' @slash' zero' zero' by perthousand; 
-   sub zero' @slash' zero' by percent; 
-   sub one' @slash' four' by onequarter; 
-   sub onesuperior' @slash' four' by onequarter;
-   sub one' @slash' two' by onehalf; 
-   sub onesuperior' @slash' twosuperior' by onehalf;
-   sub one' @slash' twosuperior' by onehalf; 
-   sub three' @slash' four' by threequarters; 
-   sub threesuperior' @slash' four' by threequarters; 
-#   sub one.numerator' @SLASH' three.numerator' by onethird; 
- ##  sub two.numerator' @SLASH' three.numerator' by twothirds; 
- #  sub one.numerator' @SLASH' eight.numerator' by oneeighth; 
- #  sub three.numerator' @SLASH' eight.numerator' by threeeighths; 
-#   sub five.numerator' @SLASH' eight.numerator' by fiveeighths; 
-#   sub seven.numerator' @SLASH' eight.numerator' by seveneighths; ";
-tag = frac;
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f i by fi;
+sub f l by fl;
+";
+tag = liga;
 }
 );
 fontMaster = (
@@ -4484,6 +3109,145 @@ width = 890;
 unicode = 348;
 },
 {
+glyphname = Scommaaccent;
+lastChange = "2023-03-27 10:17:53 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = S;
+},
+{
+pos = (314,30);
+ref = uni0326;
+}
+);
+width = 890;
+}
+);
+unicode = 536;
+},
+{
+glyphname = Germandbls;
+lastChange = "2023-03-27 10:15:04 +0000";
+layers = (
+{
+background = {
+shapes = (
+{
+closed = 0;
+nodes = (
+(472,650,ls),
+(500,650,o),
+(522,628,o),
+(522,600,cs),
+(522,572,o),
+(500,550,o),
+(472,550,cs),
+(422,550,ls),
+(339,550,o),
+(272,483,o),
+(272,400,cs),
+(272,317,o),
+(339,250,o),
+(422,250,cs),
+(697,250,ls),
+(738,250,o),
+(772,216,o),
+(772,175,cs),
+(772,134,o),
+(738,100,o),
+(697,100,cs),
+(272,100,l),
+(272,0,l),
+(697,0,ls),
+(794,0,o),
+(872,78,o),
+(872,175,cs),
+(872,272,o),
+(794,350,o),
+(697,350,cs),
+(422,350,ls),
+(394,350,o),
+(372,372,o),
+(372,400,cs),
+(372,428,o),
+(394,450,o),
+(422,450,cs),
+(472,450,ls),
+(555,450,o),
+(622,517,o),
+(622,600,cs),
+(622,683,o),
+(555,750,o),
+(472,750,cs)
+);
+}
+);
+};
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+closed = 1;
+nodes = (
+(710,600,o),
+(732,584,o),
+(732,550,cs),
+(732,516,o),
+(710,503,o),
+(682,503,cs),
+(492,503,ls),
+(409,503,o),
+(342,447,o),
+(342,349,cs),
+(342,251,o),
+(409,206,o),
+(492,206,cs),
+(697,206,ls),
+(738,206,o),
+(772,196,o),
+(772,155,cs),
+(772,116,o),
+(738,100,o),
+(697,100,cs),
+(272,100,l),
+(272,0,l),
+(697,0,ls),
+(794,0,o),
+(872,52,o),
+(872,156,cs),
+(872,261,o),
+(794,303,o),
+(697,303,cs),
+(492,303,ls),
+(464,303,o),
+(442,324,o),
+(442,352,cs),
+(442,379,o),
+(464,401,o),
+(492,401,cs),
+(682,401,ls),
+(765,401,o),
+(832,458,o),
+(832,550,cs),
+(832,642,o),
+(765,700,o),
+(682,700,cs),
+(84,700,l),
+(84,0,l),
+(184,0,l),
+(184,600,l),
+(682,600,ls)
+);
+}
+);
+width = 920;
+}
+);
+unicode = 7838;
+},
+{
 glyphname = T;
 kernLeft = _kernT;
 kernRight = _kernT;
@@ -6648,9 +5412,10 @@ width = 243;
 unicode = 105;
 },
 {
-glyphname = dotlessi;
+glyphname = idotless;
 kernLeft = _kerni;
 kernRight = _kerni;
+lastChange = "2023-03-27 10:17:09 +0000";
 layers = (
 {
 layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
@@ -6680,7 +5445,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6703,7 +5468,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6726,7 +5491,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6749,7 +5514,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6772,7 +5537,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6816,7 +5581,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6882,7 +5647,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessi;
+ref = idotless;
 },
 {
 alignment = -1;
@@ -6929,9 +5694,10 @@ width = 698;
 unicode = 106;
 },
 {
-glyphname = dotlessj;
+glyphname = jdotless;
 kernLeft = _kernj;
 kernRight = _kernj;
+lastChange = "2023-03-27 10:17:16 +0000";
 layers = (
 {
 layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
@@ -6971,7 +5737,7 @@ layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
 shapes = (
 {
 alignment = -1;
-ref = dotlessj;
+ref = jdotless;
 },
 {
 alignment = -1;
@@ -7162,7 +5928,8 @@ width = 611;
 unicode = 316;
 },
 {
-glyphname = ldotaccent;
+glyphname = ldot;
+lastChange = "2023-03-27 10:17:27 +0000";
 layers = (
 {
 layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
@@ -8290,6 +7057,26 @@ width = 707;
 }
 );
 unicode = 349;
+},
+{
+glyphname = scommaaccent;
+lastChange = "2023-03-27 10:18:03 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = s;
+},
+{
+pos = (214,30);
+ref = uni0326;
+}
+);
+width = 707;
+}
+);
+unicode = 537;
 },
 {
 glyphname = germandbls;
@@ -13409,6 +12196,182 @@ width = 1192;
 unicode = 8240;
 },
 {
+glyphname = dieresiscomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = dieresis;
+}
+);
+width = 254;
+}
+);
+unicode = 776;
+},
+{
+glyphname = dotaccentcomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = dotaccent;
+}
+);
+width = 90;
+}
+);
+unicode = 775;
+},
+{
+glyphname = gravecomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = grave;
+}
+);
+width = 207;
+}
+);
+unicode = 768;
+},
+{
+glyphname = acutecomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = acute;
+}
+);
+width = 207;
+}
+);
+unicode = 769;
+},
+{
+glyphname = hungarumlautcomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = hungarumlaut;
+}
+);
+width = 304;
+}
+);
+unicode = 779;
+},
+{
+glyphname = circumflexcomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = circumflex;
+}
+);
+width = 320;
+}
+);
+unicode = 770;
+},
+{
+glyphname = caroncomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = caron;
+}
+);
+width = 310;
+}
+);
+unicode = 780;
+},
+{
+glyphname = brevecomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = breve;
+}
+);
+width = 286;
+}
+);
+unicode = 774;
+},
+{
+glyphname = ringcomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = ring;
+}
+);
+width = 206;
+}
+);
+unicode = 778;
+},
+{
+glyphname = tildecomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = tilde;
+}
+);
+width = 278;
+}
+);
+unicode = 771;
+},
+{
+glyphname = macroncomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = macron;
+}
+);
+width = 236;
+}
+);
+unicode = 772;
+},
+{
 glyphname = uni0312;
 layers = (
 {
@@ -13506,6 +12469,38 @@ width = 263;
 }
 );
 unicode = 806;
+},
+{
+glyphname = cedillacomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = cedilla;
+}
+);
+width = 190;
+}
+);
+unicode = 807;
+},
+{
+glyphname = ogonekcomb;
+lastChange = "2023-03-27 10:14:41 +0000";
+layers = (
+{
+layerId = "E5B5FB99-9938-4E00-AE85-C3C14992734E";
+shapes = (
+{
+ref = ogonek;
+}
+);
+width = 190;
+}
+);
+unicode = 808;
 },
 {
 glyphname = dieresis;
