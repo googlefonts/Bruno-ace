@@ -9131,16 +9131,6 @@ width = 417;
 unicode = 179;
 },
 {
-glyphname = .notdef;
-layers = (
-{
-layerId = "F5409816-E8F8-46F1-A2F4-6705DB458E6F";
-width = 375;
-}
-);
-unicode = 0;
-},
-{
 glyphname = space;
 layers = (
 {
@@ -9793,27 +9783,6 @@ width = 678;
 }
 );
 unicode = 45;
-},
-{
-glyphname = uni00AD;
-layers = (
-{
-layerId = "F5409816-E8F8-46F1-A2F4-6705DB458E6F";
-shapes = (
-{
-closed = 1;
-nodes = (
-(614,400,l),
-(64,400,l),
-(64,300,l),
-(614,300,l)
-);
-}
-);
-width = 678;
-}
-);
-unicode = 173;
 },
 {
 glyphname = endash;
